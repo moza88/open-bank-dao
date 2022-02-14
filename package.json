@@ -83,5 +83,11 @@
     "prettier:check": "prettier --check --config ./.prettierrc.yaml \"**/*.{js,json,md,sol,ts}\"",
     "test": "hardhat test",
     "typechain": "cross-env TS_NODE_TRANSPILE_ONLY=true hardhat typechain"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "magic-sdk": "^8.0.1",
+    "material-ui": "^0.20.2"
   }
 }
