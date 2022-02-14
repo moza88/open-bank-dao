@@ -21,7 +21,7 @@ const { Text } = Typography;
 export const DashboardPage: React.FC = () => {
   const { data, isLoading } = useGetIdentity<{address: string, balance: string}>();
   const { modalProps, show, close } = useModal();
-  const [form] = Form.useForm();
+  const [form] = Form.useForm();  
   const [loading, setLoading] = useState(false);
 
   const handleModal = async (values: any) => {
@@ -98,7 +98,7 @@ export const DashboardPage: React.FC = () => {
         okButtonProps={{ loading: loading }}
       >
         <Form layout="vertical" onFinish={handleModal} form={form}>
-          <Form.Item name="receiver" label="Receiver Public Address">
+          <Form.Item name="receiver" label="Receiver Public Adress">
             <Input />
           </Form.Item>
           <Form.Item name="amount" label="Amaount Ether">
